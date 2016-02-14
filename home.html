@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<body>
   <div id="header">
     <h1>TODO's</h1>
   </div> 
@@ -18,31 +19,31 @@
         <div class="col-md-8">
           <h3>To Do</h3>
           <table class="table table-striped">
-            <tbody id="tableList">
+            <tbody id="listTable">
               <tr>
                 <td>
-                <input data-state="not-checked" class="checkboxes" type="checkbox" />
-                Continue adding and deleting items
+                <input data-state="nocheck" class="checkboxes" type="checkbox" />
+                Complete the list...
                 <button value="Delete" class="btn btn-danger btn-xs">Delete</button>
                 </td>
               </tr>
               <tr>
                 <td>
-                <input data-state="not-checked" class="checkboxes" type="checkbox" />
+                <input data-state="nocheck" class="checkboxes" type="checkbox" />
                 Make sure nothing is broken
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
               <tr>
                 <td>
-                <input data-state="not-checked" class="checkboxes" type="checkbox" />
-                Look up tasty waffle recipes
+                <input data-state="nocheck" class="checkboxes" type="checkbox" />
+                Look up fun waffle recipes
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
               </tr>
               <tr>
                 <td>
-                <input data-state="not-checked" class="checkboxes" type="checkbox" />
-                Stay warm
+                <input data-state="nocheck" class="checkboxes" type="checkbox" />
+                Stay warm!
                 <button class="btn btn-danger btn-xs">Delete</button>
                 </td>
               </tr>
@@ -50,13 +51,13 @@
           </table>
         </div>
         <div class="col-md-4">
-          <h3>Add Me</h3>
+          <h3>Add Item Here</h3>
           <table>
             <tr>
               <td>
                 <form>
-                  <input id="addItem" placeholder="Add new item here" autocomplete="off" type="text" />
-                  <button id="addItemBtn" class="btn btn-primary btn-sm">Add</button>
+                  <input id="newItem" placeholder="What to do..." autocomplete="off" type="text" />
+                  <button id="addItemBtn" class="btn btn-primary btn-sm">What else shall we do?</button>
                 </td>
                 </form>
               </tr>
@@ -66,6 +67,7 @@
       </div>
     </div>
   </div>
+
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script type="text/javascript" src= "todo.js"></script>
 
