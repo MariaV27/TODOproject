@@ -3,49 +3,72 @@
 
 <head>
   <title>TODO Project</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
-  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/superhero/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
-  <div id="container">
-    <div id="header">
-      <h1>TODO's</h1>
+  <div id="header">
+    <h1>TODO's</h1>
+  </div> 
 
-      <button type="button" class="btn btn-primary btn-lg active">ADD</button>
-      <button type="button" class="btn btn-success btn-lg active">Remove</button>
-      <button type="button" class="btn btn-success btn-lg active">Delete</button>
-
-
-    </div>
-    <div id="content">
-      <div id="nav">
-        <h2>Short-Term</h2>
-        <ul>
-            <li>make a todo list!</li>
-            <li>create the html</li>
-            <li>use css</li>
-        </ul>
-
+  <div class="container-fluid">
+    <div class="row-fluid">
+      <div class="col-md-12">
+        <div class="col-md-8">
+          <h3>To Do</h3>
+          <table class="table table-striped">
+            <tbody id="tableList">
+              <tr>
+                <td>
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
+                Continue adding and deleting items
+                <button value="Delete" class="btn btn-danger btn-xs">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
+                Make sure nothing is broken
+                <button class="btn btn-danger btn-xs">Delete</button>
+                </td>
+              <tr>
+                <td>
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
+                Look up tasty waffle recipes
+                <button class="btn btn-danger btn-xs">Delete</button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                <input data-state="not-checked" class="checkboxes" type="checkbox" />
+                Stay warm
+                <button class="btn btn-danger btn-xs">Delete</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md-4">
+          <h3>Add Me</h3>
+          <table>
+            <tr>
+              <td>
+                <form>
+                  <input id="addItem" placeholder="Add new item here" autocomplete="off" type="text" />
+                  <button id="addItemBtn" class="btn btn-primary btn-sm">Add</button>
+                </td>
+                </form>
+              </tr>
+            </table>
+          </div>
+        </div>
       </div>
-
-      <div id="main">
-        <div id="nav">
-          <h2>Long-Term<h2>
-          <ul>
-            <li>make it do things</li>
-            <li>Keep on adding this</li>
-            <li>perfection is a work in progress</li>
-        </ul>
-
-      </div>
     </div>
+  </div>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script type="text/javascript" src= "todo.js"></script>
 
-<script type="text/javascript" src=http://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script type="text/javascript" src="todo.js"> </script>>
 
 </body>
 </html>
